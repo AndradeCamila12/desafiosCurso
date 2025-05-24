@@ -50,7 +50,9 @@ printf("\n");
 printf(" *** --------------------------- ***\n");
 printf("\n");
 
-////movendo o CAVALO 2 casas para a esquerda e 1 para a esquerda:
+// *** Desafio xadrez - AVENTUREIRO ***
+
+//movendo o CAVALO 2 casas para a esquerda e 1 para a esquerda:
 
 printf("Movimentando o cavalo:\n");
 
