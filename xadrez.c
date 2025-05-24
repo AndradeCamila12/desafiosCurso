@@ -21,28 +21,15 @@ printf("\n");
 
 
 //movendo o BISPO 5 casas na diagonal cima-direita utilizando DO-WHILE:
-printf("Movimentando o bispo:\n");
 
-//definindo e inicializando as variáveis com uma posição inicial para o bispo
-int linha = 1;
-int coluna = 3;
-int bispo; 
+printf("movimentando o bispo:\n");
 
-do {        
-       printf("Digite o número de casas que a peça irá se mover: ");
-       scanf("%d", &bispo);
+int bispo = 0;
 
-        linha += bispo;
-        coluna += bispo;
+    do {
+        printf("cima\n");
+        printf("direita\n");
         bispo++;
-
-        // Verifica se o movimento é válido (dentro dos limites do tabuleiro)
-        if (linha >= 0 && coluna < 9) {
-            printf("Posição após movimento: casa (%d, %d)\n", linha, coluna);
-        } else {
-            printf("Movimento inválido, fora do tabuleiro.\n");
-    
-        }
     } while (bispo < 5);
 
 printf("\n");
