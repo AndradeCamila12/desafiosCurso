@@ -2,12 +2,12 @@
 
  int main(){
 
-// *** Desafio batalha naval - NOVATO ***
+// *** Desafio batalha naval - NOVATO e AVENTUREIRO ***
 
 //criando uma matriz que represente o tabuleiro de batalha naval, sem navios
 
  char * tabuleiro [11][11] = {
-  		{" ", "A", "B", "C", "D", "E", "F", "G", "H", "I", "J"},
+  		  {" ", "A", "B", "C", "D", "E", "F", "G", "H", "I", "J"},
         {"1", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0"},
         {"2", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0"},
         {"3", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0"},
