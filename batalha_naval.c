@@ -30,11 +30,18 @@
 
  for (i = 0; i < 11; i++){
   	for (j = 0; j < 11; j++){
-  		if ((i == 3) && (j == 3 || j == 4 || j == 5)){
-        	(tabuleiro [i][j] = "3");
-        }
-        if ((j == 8) && (i == 5 || i == 6 || i == 7)){
-        	(tabuleiro [i][j] = "3");
+      
+  		if ((i == 2) && (j == 3 || j == 4 || j == 5)){
+        	(tabuleiro [i][j] = "3"); //adiciona um navio na horizontal
+
+        } if ((j == 8) && (i == 5 || i == 6 || i == 7)){
+        	(tabuleiro [i][j] = "3"); //adiciona um navio na vertical
+
+        }  if ((i == j) && (j == 4 || j == 5 || j == 6)){
+        	tabuleiro [i][j] = "3"; //adiciona um navio na diagonal principal
+            
+        } if ((i + j == 10) && (i == 7 || i == 8 || i == 9)){
+        	tabuleiro [i][j] = "3"; //adiciona um navio na diagonal secundária
         }
         
   	  printf("%s ", tabuleiro [i][j]); 
