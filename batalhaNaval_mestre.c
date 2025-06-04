@@ -2,45 +2,46 @@
 
  int main(){
 
-// *** Desafio batalha naval - NOVATO e AVENTUREIRO ***
+// *** Desafio batalha naval - MESTRE ***
 
 //criando uma matriz que represente o tabuleiro de batalha naval, sem navios
+//dessa vez será usado loops em vez de escrever a parte dos 0s valor por valor
 
- char * tabuleiro [11][11] = {
-  		  {" ", "A", "B", "C", "D", "E", "F", "G", "H", "I", "J"},
-        {"1", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0"},
-        {"2", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0"},
-        {"3", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0"},
-        {"4", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0"},
-        {"5", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0"},
-        {"6", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0"},
-        {"7", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0"},
-        {"8", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0"},
-        {"9", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0"},
-        {"10", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0"}
-  };
-
-
-  printf(" *** TABULEIRO - BATALHA NAVAL ***\n");
+char letras [11] = {' ','A','B','C','D','E','F','G','H','I','J'};
+int tabuleiro [10][11];
+  
+  printf("*** TABULEIRO - BATALHA NAVAL ***\n");
   printf("\n");
 
-  int i, j;
+  for (int a = 0; a < 11; a++){
+    printf("%c ", letras [a]);
+  }
+  
+  printf("\n");
+  
+  for (int i = 0; i < 10; i++) {
+  	for (int j = 0; j < 11; j++){
 
- for (i = 0; i < 11; i++){
-  	for (j = 0; j < 11; j++){
+
+        if (j == 0) {
+        	tabuleiro [i][j] = i + 1;
+          
+        } else {
+            tabuleiro [i][j] = 0;  
+        }
+        
+        printf("%d ", tabuleiro [i][j]);
     
-    } if ((i > 7 && i < 11) && (j))
-
-    printf("%s ", tabuleiro[i][j]);
-    printf("\n");
- }
-
-
-
-
-
-
-
+    	}
+        
+        printf("\n");
+        
+    }
+  
+  //falta determinar as habilidades especiais
+  
+  
+  
 
 
   return 0;
